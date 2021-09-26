@@ -483,7 +483,7 @@ export function Home() {
                 </Intro>
                 <div className={styles.aboutDiv}>
                     <Typography className={styles.heading} style={{ color: "rgb(23, 23, 26)", fontWeight: "370px",  paddingBottom:"15px", borderBottom:"1px solid rgb(219, 219, 211)", width:"28%", margin:"auto"}} variant="h4">About</Typography>
-                    <p style={{marginTop:"59px", fontSize:"23px"}}>Fascinated by computer programs and how they solve real-world problems, and passionate about building computer applications.</p>
+                    <p style={{marginTop:"59px", fontSize:"23px"}}>Fascinated by computer programs and how they solve real-world problems. Passionate about building computer applications and love solving problems.</p>
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", backgroundColor: "rgb(23, 23, 24)" }}>
                     <Typography className={styles.heading} style={{color:"white", borderBottom:"1px solid rgb(49, 49, 47)",width:"30%", margin:"5px auto", paddingBottom:"19px", fontWeight:"370px"}} variant="h4">Skills</Typography>
