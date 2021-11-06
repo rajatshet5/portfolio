@@ -93,10 +93,9 @@ a {
   align-items: center;
   justify-content: center;
   width: 92%;
-  /* height: 89%; */
   padding: 3px 15px;
 }
-.linksDiv > button {
+.linksDiv > a {
   background-color: rgb(0, 128, 255);
   /* background-color: #0fb0cc; */
   color: rgb(66, 65, 65);
@@ -111,10 +110,10 @@ a {
   align-items: center;
   padding-right: 10px;
 }
-.linksDiv > button:hover {
+.linksDiv > a:hover {
   background-color: rgb(0, 105, 209);
 }
-.linksDiv > button > a {
+.linksDiv > a > span {
   color: rgb(255, 255, 255);
   font-size: 13px;
 }

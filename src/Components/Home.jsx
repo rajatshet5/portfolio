@@ -544,8 +544,8 @@ export function Home() {
                             {/* <Button variant="outlined" style={{textTransform:"none", margin:"5px auto", width:"50%", height:"30px", fontSize:"10px"}} >See More</Button> */}
                                 </div>
                                 <div className={styles.linksDiv}>
-                                    <button style={{display:"flex", alignItems:"center"}}><GitHubIcon style={{width:"15px", marginRight:"6px", color:"white"}}/><a target="_blank" rel="noopener noreferrer" href={item.gitHub}>GitHub</a></button>
-                                    <button style={{display:"flex", alignItems:"center"}}><BlurOnIcon style={{width:"19px", marginRight:"4px", color:"white"}}/><a target="_blank" rel="noopener noreferrer" href={item.demo}>Demo</a></button>
+                                    <a target="_blank" rel="noopener noreferrer" href={item.gitHub} style={{display:"flex", alignItems:"center"}}><GitHubIcon style={{width:"15px", marginRight:"6px", color:"white"}}/><span>GitHub</span></a>
+                                    <a target="_blank" rel="noopener noreferrer" href={item.demo} style={{display:"flex", alignItems:"center"}}><BlurOnIcon style={{width:"19px", marginRight:"4px", color:"white"}}/><span>Demo</span></a>
                                 </div>
                             </div>
                             </ProjectBox>
@@ -561,7 +561,7 @@ export function Home() {
                         </div>
                         <ContactSub >
                             <div style={{ display: "flex", alignItems: "center" }}><PhoneIcon /><p style={{ marginLeft: "5px" }}>+91 8310842420</p></div>
-                            <div ><a  style={{display:"flex", alignItems:"center", color:"white"}} href="mailto:rajatshet5@gmail.com"><MailOutlineIcon/><p style={{marginLeft:"5px"}}>rajatshet5@gmail.com</p></a></div>
+                            <div ><a style={{display:"flex", alignItems:"center", color:"white"}} href="mailto:rajatshet5@gmail.com"><MailOutlineIcon/><p style={{marginLeft:"5px"}}>rajatshet5@gmail.com</p></a></div>
                         </ContactSub>
                     </div>
                 </Footer>
