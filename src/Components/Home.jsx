@@ -368,7 +368,7 @@ export function Home() {
             name: "HashNode",
             img: "/hashnodePicture.png",
             desc: "Hashnode is a social media cum blogging application",
-            features: ["Implemented the complete backend and the Redux parts of the application", "Implemented the core features of the project like: posting a blog, commenting on a blog, likes on posts and comments, follow/unfollow users, uploading profile picture, cover picture, bookmarking blogs, recent activity, etc.", "Built the following pages: User profile page, edit profile page, post/comment cards, creating a blog page"],
+            features: ["Implemented the complete backend and the Redux parts of the application.", "Implemented the core features of the project like: posting a blog, commenting on a blog, 'likes' on posts and comments, 'follow/unfollow' users, upload profile-picture/cover-picture, bookmarking blogs, recent activity section, etc.", "Built the following pages: User profile page, edit profile page, post/comment cards, 'create a blog' page"],
             responsibilities: "",
             techStack:["React", "NodeJS", "Redux"],
             gitHub:"https://github.com/pawanpatidar21/hashnode_clone",
@@ -377,8 +377,8 @@ export function Home() {
         {
             name: "Sudoku Solver",
             img: "/sudokuPicture.png",
-            desc: "An application that can solve any Sudoku problem",
-            features: ["Solo Project", "An application that can solve any Sudoku problem. Implemented using backtracking algorithm."],
+            desc: "Sudoku solving application",
+            features: ["Solo Project", "An application that can solve any Sudoku problem. Implemented using backtracking algorithm.", "The speed at which the algorithm runs can also be adjusted."],
             responsibilities: "",
             techStack:["React"],
             gitHub:"https://github.com/rajatshet5/sudoku-solver",
@@ -398,7 +398,7 @@ export function Home() {
             name: "Lybrate Clone",
             img: "/lybratePicture.png",
             desc: "Connects doctors with users",
-            features: ["Book an online consultation or a clinic appointment with any doctor at any particular date and time and the respective doctor gets notified.", "Anonymous users can ask questions to doctors and doctors answer the questions. The question and the answer, along with the doctor details will get added to the health feed page.", "Search for doctors by their name / specialty / city. Search for keywords in the questions that have been asked in the health feed page."],
+            features: ["Book an online consultation or a clinic appointment with any doctor at any particular date and time and the respective doctor gets notified.", "Implemented the core features of the application: Anonymous users can ask questions to doctors and doctors answer the questions. The question and the answer, along with the doctor details will get added to the health feed page.", "Search for doctors by their name / specialty / city. Search for keywords in the questions that have been asked in the health feed page."],
             responsibilities: "",
             techStack:["JavaScript", "HTML", "CSS"],
             gitHub:"https://github.com/rajatshet5/lybrate.com-Clone/tree/main/Project_Lybrate",
@@ -482,7 +482,7 @@ export function Home() {
                             <img src="/pfp.png" alt="dp"/>
                             <div style={{display:"flex", border:"1px solid #03404b", backgroundColor:"rgb(29, 29, 31)", height:"41px", alignItems:"center", width:"100%", justifyContent:"space-evenly"}}>
                                 <a target="_blank" rel="noopener noreferrer" style={{color:"white"}} href="https://github.com/rajatshet5"><GitHubIcon className={styles.liIcn}/></a>
-                            <div style={{ display: "flex", alignItems: "center" }}><ListAltIcon style={{marginRight:"5px", color:"white", paddingTop:"2px"}}/><p style={{ color: "white" }}><a target="_blank" rel="noopener noreferrer" style={{color:"white"}} href="https://drive.google.com/file/d/12VfMNKHbcxlyFz-8qppfpeTJ2ZP6g3TR/view?usp=sharing">Resume</a></p></div>
+                            <div style={{ display: "flex", alignItems: "center" }}><ListAltIcon style={{marginRight:"5px", color:"white", paddingTop:"2px"}}/><p style={{ color: "white" }}><a target="_blank" rel="noopener noreferrer" style={{color:"white"}} href="https://drive.google.com/file/d/1puy0zuak28NgBxMxqru_wj1OR1OebEfA/view?usp=sharing">Resume</a></p></div>
                             </div>
                             </div>
                             {/* <div ><a  style={{display:"flex", alignItems:"center", color:"white"}} href="mailto:rajatshet5@gmail.com"><MailOutlineIcon /><p style={{marginLeft:"5px"}}>rajatshet5@gmail.com</p></a></div> */}
