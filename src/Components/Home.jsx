@@ -365,10 +365,30 @@ export function Home() {
     ]
     const projects = [
         {
+            name: "HashNode",
+            img: "/hashnodePicture.png",
+            desc: "Hashnode is a social media cum blogging application",
+            features: ["Implemented the complete backend and the Redux parts of the application", "Implemented the core features of the project like: posting a blog, commenting on a blog, likes on posts and comments, follow/unfollow users, uploading profile picture, cover picture, bookmarking blogs, recent activity, etc.", "Built the following pages: User profile page, edit profile page, post/comment cards, creating a blog page"],
+            responsibilities: "",
+            techStack:["React", "NodeJS", "Redux"],
+            gitHub:"https://github.com/pawanpatidar21/hashnode_clone",
+            demo:"https://hash-node.vercel.app/"
+        },
+        {
+            name: "Sudoku Solver",
+            img: "/sudokuPicture.png",
+            desc: "An application that can solve any Sudoku problem",
+            features: ["Solo Project", "An application that can solve any Sudoku problem. Implemented using backtracking algorithm."],
+            responsibilities: "",
+            techStack:["React"],
+            gitHub:"https://github.com/rajatshet5/sudoku-solver",
+            demo:"https://sudoku-solver-rajatshet.vercel.app/"
+        },
+        {
             name: "Orbitz Clone",
             img: "/orbitzPicture.png",
             desc: "Hotel booking application",
-            features: ["Users can search for hotels by the name of the city.","Users can also book rooms in any hotel by completing the payment process.", "Duration: 6 days."],
+            features: ["Users can search for hotels by the name of the city and book rooms in any hotel by completing the payment process.", "Implemented the complete Redux part of the application along with the search feature", "Also built the hotel intro page, booking confirmation page and implemented the payment process using Stripe payment gateway"],
             responsibilities: "",
             techStack:["React", "Redux", "MaterialUI"],
             gitHub:"https://github.com/Deependra-Negi/orbitz-clone",
@@ -393,17 +413,7 @@ export function Home() {
             techStack: ["React"],
             gitHub: "https://github.com/rajatshet5/bedonor.org-Clone",
             demo:"https://bedonor.vercel.app/"
-        },
-        // {
-        //     name: "Sudoku Solver",
-        //     img: "/sudokuPicture.png",
-        //     desc: "An application that can solve any Sudoku problem",
-        //     features: "",
-        //     responsibilities: "",
-        //     techStack:"React",
-        //     gitHub:"",
-        //     demo:""
-        // }
+        }
     ];
     const goHome = async () => {
         window.scrollTo(0, 0)
