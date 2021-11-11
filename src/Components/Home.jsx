@@ -311,7 +311,7 @@ export function Home() {
                 setHome(false);
                 setSkills(false);
                 setContact(false);
-            } else if ((val >= 2567) && (!contact)) {
+            } else if ((val >= 3567) && (!contact)) {
                 setContact(true);
                 setProjects(false);
                 setHome(false);
@@ -449,9 +449,9 @@ export function Home() {
     };
     const goContact = async () => {
         if (smallScreen.current) {
-            window.scrollTo(0, 3980)
+            window.scrollTo(0, 5180)
         } else {
-            window.scrollTo(0, 3010)
+            window.scrollTo(0, 4010)
         }
         await delay(700)
         setHome(false);
