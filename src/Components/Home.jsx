@@ -265,6 +265,7 @@ export function Home() {
     }
     const handleScroll = () => {
         const val = window.pageYOffset;
+        // console.log(val);
         const iw = window.innerWidth;
         if (iw < 500) {
             smallScreen.current = true;
@@ -284,12 +285,12 @@ export function Home() {
                 setHome(false);
                 setProjects(false);
                 setContact(false);
-            } else if ((val >= 2200) && (val < 3750) && (!_projects)) {
+            } else if ((val >= 2200) && (val < 4560) && (!_projects)) {
                 setProjects(true);
                 setHome(false);
                 setSkills(false);
                 setContact(false);
-            } else if ((val >= 3750) && (!contact)) {
+            } else if ((val >= 4560) && (!contact)) {
                 setContact(true);
                 setProjects(false);
                 setHome(false);
@@ -306,7 +307,7 @@ export function Home() {
                 setHome(false);
                 setProjects(false);
                 setContact(false);
-            } else if ((val >= 1530) && (val < 2567) && (!_projects)) {
+            } else if ((val >= 1530) && (val < 3567) && (!_projects)) {
                 setProjects(true);
                 setHome(false);
                 setSkills(false);
@@ -390,9 +391,19 @@ export function Home() {
             desc: "Hotel booking application",
             features: ["Users can search for hotels by the name of the city and book rooms in any hotel by completing the payment process.", "Implemented the complete Redux part of the application along with the search feature.", "Also built the hotel intro page, booking confirmation page and implemented the payment process using Stripe payment gateway."],
             responsibilities: "",
-            techStack:["React", "Redux", "MaterialUI"],
-            gitHub:"https://github.com/Deependra-Negi/orbitz-clone",
-            demo:"https://orbitz.netlify.app/"
+            techStack: ["React", "Redux", "MaterialUI"],
+            gitHub: "https://github.com/Deependra-Negi/orbitz-clone",
+            demo: "https://orbitz.netlify.app/"
+        },
+        {
+            name: "MZ-Image Search App",
+            img: "/mzappPicture.png",
+            desc: "Image search application",
+            features: ["Solo project.", "Image search application with debouncing and infinite scrolling."],
+            responsibilities: "",
+            techStack:["React"],
+            gitHub:"https://github.com/rajatshet5/mzapp",
+            demo:"https://mz-app.vercel.app/"
         },
         {
             name: "Lybrate Clone",
