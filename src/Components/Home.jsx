@@ -307,12 +307,12 @@ export function Home() {
                 setHome(false);
                 setProjects(false);
                 setContact(false);
-            } else if ((val >= 1530) && (val < 3567) && (!_projects)) {
+            } else if ((val >= 1530) && (val < 3705) && (!_projects)) {
                 setProjects(true);
                 setHome(false);
                 setSkills(false);
                 setContact(false);
-            } else if ((val >= 3567) && (!contact)) {
+            } else if ((val >= 3705) && (!contact)) {
                 setContact(true);
                 setProjects(false);
                 setHome(false);
