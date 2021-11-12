@@ -555,7 +555,6 @@ export function Home() {
                                     <p style={{ margin: "5px", fontSize: "13px", color: "rgb(178, 178, 180)" }}>{item.desc}</p>
                                     <div className={styles.featuresDiv}>
                                         {item.solo ? <h5>Details:</h5> : <h5>Details/my contribution:</h5>}
-                                        
                                         <ul>
                                         {item.features.map((feature, i) => {
                                             return <li style={{color:"#181827"}} key={i * 10000} className={styles.features}>{feature}</li>
