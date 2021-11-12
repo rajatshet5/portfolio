@@ -368,12 +368,13 @@ export function Home() {
         {
             name: "HashNode",
             img: "/hashnodePicture.png",
-            desc: "Hashnode is a social media cum blogging application",
-            features: ["Implemented the complete backend and the Redux parts of the application.", "Implemented the core features of the project like: posting a blog, commenting on a blog, 'likes' on posts and comments, 'follow/unfollow' users, upload profile-picture/cover-picture, bookmarking blogs, recent activity section, etc.", "Built the following pages: User profile page, edit profile page, post/comment cards, 'create a blog' page."],
+            desc: "A social media-cum-blogging application",
+            features: ["Hashnode is a social media application mainly used for blogging.", "Implemented the complete backend and the Redux parts of the application.", "Implemented the core features of the project like: posting a blog, commenting on a blog, 'likes' on posts and comments, 'follow/unfollow' users, upload profile-picture/cover-picture, bookmarking blogs, recent activity section, etc.", "Also built the following pages: User profile page, edit profile page, post/comment cards, 'create a blog' page."],
             responsibilities: "",
             techStack:["React", "NodeJS", "Redux"],
             gitHub:"https://github.com/pawanpatidar21/hashnode_clone",
-            demo:"https://hash-node.vercel.app/"
+            demo: "https://hash-node.vercel.app/",
+            solo: false
         },
         {
             name: "Sudoku Solver",
@@ -383,17 +384,19 @@ export function Home() {
             responsibilities: "",
             techStack:["React"],
             gitHub:"https://github.com/rajatshet5/sudoku-solver",
-            demo:"https://sudoku-solver-rajatshet.vercel.app/"
+            demo: "https://sudoku-solver-rajatshet.vercel.app/",
+            solo: true
         },
         {
             name: "Orbitz Clone",
             img: "/orbitzPicture.png",
             desc: "Hotel booking application",
-            features: ["Users can search for hotels by the name of the city and book rooms in any hotel by completing the payment process.", "Implemented the complete Redux part of the application along with the search feature.", "Also built the hotel intro page, booking confirmation page and implemented the payment process using Stripe payment gateway."],
+            features: ["Users can search for hotels by the name of the city and book rooms in any hotel by completing the payment process.", "Implemented the complete Redux part of the application along with the search feature.", "Also built the hotel details page, booking confirmation page and implemented the payment process using Stripe payment gateway."],
             responsibilities: "",
             techStack: ["React", "Redux", "MaterialUI"],
             gitHub: "https://github.com/Deependra-Negi/orbitz-clone",
-            demo: "https://orbitz.netlify.app/"
+            demo: "https://orbitz.netlify.app/",
+            solo: false
         },
         {
             name: "MZ-Image Search App",
@@ -403,27 +406,30 @@ export function Home() {
             responsibilities: "",
             techStack:["React"],
             gitHub:"https://github.com/rajatshet5/mzapp",
-            demo:"https://mz-app.vercel.app/"
+            demo: "https://mz-app.vercel.app/",
+            solo: true
         },
         {
             name: "Lybrate Clone",
             img: "/lybratePicture.png",
             desc: "Connects doctors with users",
-            features: ["Book an online consultation or a clinic appointment with any doctor at any particular date and time and the respective doctor gets notified.", "Implemented the core features of the application: Anonymous users can ask questions to doctors and doctors answer the questions. The question and the answer, along with the doctor details will get added to the health feed page.", "Search for doctors by their name / specialty / city. Search for keywords in the questions that have been asked in the health feed page."],
+            features: ["Book an online consultation or a clinic appointment with any doctor at any particular date and time and the respective doctor gets notified.", "Implemented the core features of the application: Online/clinic appointment booking, anonymous users can ask questions to doctors and doctors can answer the questions, search for doctors by their name / specialty / city, search for keywords in the questions that have been asked in the health feed page.", "Also built the following pages: Login/signup pages, ask questions page, book appointment/consult online pages, doctor profile page, doctor display card."],
             responsibilities: "",
             techStack:["JavaScript", "HTML", "CSS"],
             gitHub:"https://github.com/rajatshet5/lybrate.com-Clone/tree/main/Project_Lybrate",
-            demo:"https://lybrate-clone.vercel.app/Home/home2.html"
+            demo: "https://lybrate-clone.vercel.app/Home/home2.html",
+            solo: false
         },
         {
             name: "beDonor",
             img: "/bedonorPicture.png",
             desc: "Fundraiser/Donation application",
-            features: ["A logged-in user can raise funds for any cause by filling in the necessary details, and the fundraiser will be added to the list of all the existing fundraisers.", "Any user can donate money to the fundraisers. After donation, the amount is added to the raised amount and the changes are reflected in 'fundraisers', 'supporters' and 'top donors' sections."],
+            features: ["Implemented the core features of the project: A logged-in user can raise funds for any cause by filling in the necessary details, and the fundraiser will be added to the list of all the existing fundraisers.", "Any user can donate money to the fundraisers. After donation, the amount is added to the raised amount and the changes are reflected in 'fundraisers', 'supporters' and 'top donors' sections.", "Also built the following pages: Login/signup pages, 'create a fundraiser' page, fundraisers list page, donation page."],
             responsibilities: "",
             techStack: ["React"],
             gitHub: "https://github.com/rajatshet5/bedonor.org-Clone",
-            demo:"https://bedonor.vercel.app/"
+            demo: "https://bedonor.vercel.app/",
+            solo: false
         }
     ];
     const goHome = async () => {
@@ -548,6 +554,8 @@ export function Home() {
                                 <p style={{margin:"3px", fontSize:"28px"}}>{item.name}</p>
                                     <p style={{ margin: "5px", fontSize: "13px", color: "rgb(178, 178, 180)" }}>{item.desc}</p>
                                     <div className={styles.featuresDiv}>
+                                        {item.solo ? <h5>Details:</h5> : <h5>Details/my contribution:</h5>}
+                                        
                                         <ul>
                                         {item.features.map((feature, i) => {
                                             return <li style={{color:"#181827"}} key={i * 10000} className={styles.features}>{feature}</li>

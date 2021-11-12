@@ -181,3 +181,17 @@ a {
   font-weight: 370px;
   font-size: 26px !important;
 }
+h5 {
+  font-weight: 560;
+  padding: 7px 0px;
+  padding-left: 15px;
+  text-align: left;
+  color: rgb(48, 50, 51);
+  margin: 0px;
+  margin-left: 10px;
+  font-size: 17px;
+  width: 50%;
+}
+ul {
+  margin: 10px 0px;
+}
