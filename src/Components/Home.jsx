@@ -307,12 +307,12 @@ export function Home() {
                 setHome(false);
                 setProjects(false);
                 setContact(false);
-            } else if ((val >= 1530) && (val < 3705) && (!_projects)) {
+            } else if ((val >= 1530) && (val < 3995) && (!_projects)) {
                 setProjects(true);
                 setHome(false);
                 setSkills(false);
                 setContact(false);
-            } else if ((val >= 3705) && (!contact)) {
+            } else if ((val >= 3995) && (!contact)) {
                 setContact(true);
                 setProjects(false);
                 setHome(false);
@@ -468,7 +468,7 @@ export function Home() {
         if (smallScreen.current) {
             window.scrollTo(0, 5180)
         } else {
-            window.scrollTo(0, 4010)
+            window.scrollTo(0, 4310)
         }
         await delay(700)
         setHome(false);
@@ -499,7 +499,7 @@ export function Home() {
                             <img src="/pfp.png" alt="dp"/>
                             <div style={{display:"flex", border:"1px solid #03404b", backgroundColor:"rgb(29, 29, 31)", height:"41px", alignItems:"center", width:"100%", justifyContent:"space-evenly"}}>
                                 <a target="_blank" rel="noopener noreferrer" style={{color:"white"}} href="https://github.com/rajatshet5"><GitHubIcon className={styles.liIcn}/></a>
-                            <div style={{ display: "flex", alignItems: "center" }}><ListAltIcon style={{marginRight:"5px", color:"white", paddingTop:"2px"}}/><p style={{ color: "white" }}><a target="_blank" rel="noopener noreferrer" style={{color:"white"}} href="https://drive.google.com/file/d/18LoZwUGHBRz7or75SbFiZ0nL6-PNkSQ6/view?usp=sharing">Resume</a></p></div>
+                            <div style={{ display: "flex", alignItems: "center" }}><ListAltIcon style={{marginRight:"5px", color:"white", paddingTop:"2px"}}/><p style={{ color: "white" }}><a target="_blank" rel="noopener noreferrer" style={{color:"white"}} href="https://drive.google.com/file/d/1rgv79_s-XypmXtmbV4gwN2NSwBXbpCd6/view?usp=sharing">Resume</a></p></div>
                             </div>
                             </div>
                             {/* <div ><a  style={{display:"flex", alignItems:"center", color:"white"}} href="mailto:rajatshet5@gmail.com"><MailOutlineIcon /><p style={{marginLeft:"5px"}}>rajatshet5@gmail.com</p></a></div> */}
